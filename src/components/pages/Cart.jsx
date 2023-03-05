@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Main from "../template/Main";
+import './Cart.css'
 
 const headerProps = {
     icon: 'users',
@@ -7,19 +8,30 @@ const headerProps = {
 }
 
 export default class Cart extends Component {
-    renderContent(){
-        return(
-            <div className="carrinho-de-compras">
-                <p>ATENÇÃO!!</p>
-            </div>
-        )
-    }    
-    
-    render(){
-            return (
-                <Main {...headerProps}>
-                    {this.renderContent}
-                </Main>
-        )
-    }
+        renderCart(){
+            return(
+                <div className="carrinho-de-compras">
+                        <div className="product-content">
+                            PRODUTO
+                        </div>
+                        <div className="entrega">
+                            INFORMAÇÕES DE ENTREGA
+                        </div>
+                        <div className="descricao">
+                            DESCRIÇÃO SOBRE O SITE
+                        </div>
+                        <div className="rightnav">
+                            FINALIZAR PEDIDO
+                        </div>
+                    </div>
+                )
+        }
+
+        render(){
+            return(
+            <Main {...headerProps}>
+                {this.renderCart()}
+            </Main>
+            )
+        }
 }

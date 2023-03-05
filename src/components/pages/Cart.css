@@ -1,4 +1,63 @@
-.carrinho-de-compras{
-    height: 100%;
-    background-color: gray;
+div.carrinho-de-compras{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    'produto produto rightnav'
+    'entrega entrega rightnav'
+    'descricao descricao rightnav'
+    ;
+    height: 100vh;
+}
+
+div.product-content{
+    height: 7em;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+    border: 3px solid transparent;
+    border-radius: 2%;
+    background-color: aliceblue;
+
+    grid-area: produto;
+}
+
+div.entrega{
+    height: 7em;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+    border: 3px solid transparent;
+    border-radius: 2%;
+    background-color: aliceblue;
+
+    grid-area: entrega;
+}
+
+div.descricao{
+    height: 7em;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+    border: 3px solid transparent;
+    border-radius: 2%;
+    background-color: aliceblue;
+
+    grid-area: descricao;
+}
+
+div.rightnav{
+    height: 50em;
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+
+    background-color: aliceblue;
+
+    border: 3px solid transparent;
+    border-radius: 2%;
+    grid-area: rightnav;
 }
