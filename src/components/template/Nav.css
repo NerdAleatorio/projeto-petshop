@@ -1,0 +1,14 @@
+aside.sidenav{
+    text-align: center;
+    background-color: rgb(255, 0, 0);
+}
+
+.sidenav-nav a{
+    display: block;
+
+    margin-top: 1.5rem;
+
+    color: #FFF;
+    font-weight: 600;
+    text-decoration: none;
+}
