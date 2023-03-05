@@ -1,0 +1,74 @@
+div.produto-content{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 10% 1fr 1fr 5% 1fr;
+    grid-template-rows: 2.5em 2.5em 2.5em;
+    grid-template-areas:
+        'imagem nome quantidade excluir excluir'
+        'imagem animal marca preco preco'
+        'imagem tamanho porte preco preco'
+    ;
+    background-color: white;
+
+    margin-top: 1rem;
+    border-radius: 1%;
+    border: 2px solid transparent;
+}
+
+.img-produto{
+    width: 100%;
+    height: 100%;
+    margin-top: 0rem;
+    grid-area: imagem;
+}
+
+.produto-content h1{
+    font-size: 23px;
+    color: rgb(255, 60, 0);
+    
+    grid-area: nome;
+}
+
+.marca{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(255, 60, 0);
+
+    grid-area: marca;
+}
+
+.animal{
+    font-size: 17px;
+    font-weight: 600;
+    grid-area: animal;
+}
+
+.porte{
+    font-size: 17px;
+    font-weight: 600;
+    grid-area: porte;
+}
+
+.tamanho{
+    font-size: 17px;
+    font-weight: 600;
+    grid-area: tamanho;
+}
+
+.preco{
+    font-size: 20px;
+    font-weight: 600;
+    grid-area: preco;
+}
+
+.excluir{
+    width: 25px;
+    height: 25px;
+    margin-left: 10rem;
+    grid-area: excluir;
+}
+
+.quantidade{
+    grid-area: quantidade;
+}

@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Home from "../components/home/Home";
 import Cart from '../components/pages/Cart'
+import Produto from "../components/items/Produto";
 
 export default props => (
     <Routes>

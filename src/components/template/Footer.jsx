@@ -3,5 +3,5 @@ import './Footer.css'
 
 export default props =>
     <footer className='footer'>
-        <span className='footer'> &copy; Copyright Grupo Vortex</span>
+        <p className='footer-text'>&copy; Copyright Grupo Vortex</p>
     </footer>

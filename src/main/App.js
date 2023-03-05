@@ -14,7 +14,7 @@ export default props =>
   <BrowserRouter>
     <div className='app grid-template-rows-4'>
       <Logo />
-      <Header/>
+      <Header />
       <Main />
       <Nav />
       <Routes />

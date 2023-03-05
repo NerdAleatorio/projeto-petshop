@@ -1,6 +1,9 @@
 .footer{
+    color: #fff;
+    font-weight: 600;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: cyan;
+    background-color: rgb(71, 71, 71);
 }
+
