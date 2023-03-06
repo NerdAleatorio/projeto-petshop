@@ -20,13 +20,28 @@ export default class Cart extends Component {
 
                             <Produto 
                             url='https://static.petz.com.br/fotos/1639142661810.jpg'
-                            nome='Ração Finotrato Gold' marca='Finotrato' animal='Cães' porte='Adulto' 
+                            nome='Ração Golden' marca='Golden' animal='Cães' porte='Adulto' 
                             tamanho='1KG' preco='R$ 44.99' quantidade='1'/>
                             
+                            <Produto 
+                            url='https://static.petz.com.br/fotos/1658419480153.jpg'
+                            nome='Ração Finotrato Gold' marca='Finotrato' animal='Cães' porte='Adulto' 
+                            tamanho='3KG' preco='R$ 54.90' quantidade='1'/>
+
+                            <Produto 
+                            url='https://static.petz.com.br/fotos/1674074964254.jpg'
+                            nome='Ração GranPlus Choice' marca='Finotrato' animal='Gatos' porte='Adulto' 
+                            tamanho='10KG' preco='R$ 147.99' quantidade='1'/>
+
+                            <Produto 
+                            url='https://static.petz.com.br/fotos/1656511663150.jpg'
+                            nome='Alcon Club Reptolife' marca='Reptolife' animal='Tartaruga' porte='Adulto' 
+                            tamanho='270G' preco='R$ 96.90' quantidade='1'/>
+
                         </div>
-                        <div className="entrega">
+                        {/* <div className="entrega">
                             INFORMAÇÕES DE ENTREGA
-                        </div>
+                        </div> */}
                         <div className="rightnav">
                             FINALIZAR PEDIDO
                         </div>

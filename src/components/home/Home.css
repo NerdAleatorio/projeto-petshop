@@ -1,0 +1,57 @@
+.home{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 
+        'destaque destaque destaque destaque destaque'
+        'marcas marcas marcas marcas marcas'
+        'produtos produtos produtos produtos produtos'
+        'servicos servicos servicos servicos servicos'
+        'outros outros outros outros outros'
+    ;
+    height: 100vh;
+}
+
+.cupom{
+    width: 70vh;
+    height: 30vh;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    grid-area: cupom;
+}
+
+.titulo-destaque{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgb(255, 0, 136);
+
+    margin-top: 0rem;
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+
+    width: 10.5em;
+
+    text-align: start;
+}
+
+.destaque{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: destaque;
+
+    margin-top: 5rem;
+}
+
+.marcas{
+    grid-area: marcas;
+}
+
+.produtos{
+    grid-area: produtos;
+}
+
+.servicos{
+    grid-area: servicos;
+}

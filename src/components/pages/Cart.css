@@ -1,8 +1,15 @@
 div.carrinho-de-compras{
     margin: 0;
     display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
+    'produto produto rightnav'
+    'produto produto rightnav'
+    'produto produto rightnav'
     'produto produto rightnav'
     'entrega entrega rightnav'
     ;
@@ -10,21 +17,23 @@ div.carrinho-de-compras{
 }
 
 div.product-content{
-    height: 70%;
-    margin-top: 0.5rem;
+    height: 100%;
+    margin-top: 15rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
 
     border: 3px solid transparent;
     border-radius: 2%;
-    background-color: aliceblue;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
     grid-area: produto;
 }
 
 div.entrega{
     height: 100%;
-    margin-top: 1.5rem;
+    margin-top: 15rem;
     margin-left: 1.2rem;
     margin-right: 1.2rem;
 

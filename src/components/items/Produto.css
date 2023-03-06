@@ -1,36 +1,73 @@
 div.produto-content{
     display: grid;
-    text-align: center;
+    text-align: start;
     align-items: center;
-    grid-template-columns: 10% 1fr 1fr 5% 1fr;
-    grid-template-rows: 2.5em 2.5em 2.5em;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5em 6em 3em; 
     grid-template-areas:
-        'imagem nome quantidade excluir excluir'
-        'imagem animal marca preco preco'
-        'imagem tamanho porte preco preco'
+        'imagem' 
+        'descricao'
+        'preco'
     ;
-    background-color: white;
+    width: 20em;
+    height: 20em;
+    background-color: rgb(255, 255, 255);
 
-    margin-top: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
     border-radius: 1%;
     border: 2px solid transparent;
 }
 
 .img-produto{
-    width: 100%;
-    height: 100%;
-    margin-top: 0rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-left: 4.5rem;
     grid-area: imagem;
 }
 
-.produto-content h1{
-    font-size: 23px;
-    color: rgb(255, 60, 0);
-    
+#nome{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(255, 0, 136);
+
     grid-area: nome;
 }
 
-.marca{
+.descricao{
+    margin-top: 1rem;
+    grid-area: descricao;
+}
+
+.preco{
+    margin-top: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    grid-area: preco;
+
+    text-align: center;
+
+    border: 2%;
+    border: 2px solid transparent;
+    background-color: rgba(104, 179, 230, 0.438);
+}
+
+.conteudo{
+    border-radius: 2%;
+    border: 2px solid rgba(104, 179, 230, 0.438);
+    background-color: transparent;
+}
+
+#destaque{
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(255, 0, 136);
+}
+
+/* .marca{
     font-size: 17px;
     font-weight: 600;
     color: rgb(255, 60, 0);
@@ -56,12 +93,6 @@ div.produto-content{
     grid-area: tamanho;
 }
 
-.preco{
-    font-size: 20px;
-    font-weight: 600;
-    grid-area: preco;
-}
-
 .excluir{
     width: 25px;
     height: 25px;
@@ -71,4 +102,4 @@ div.produto-content{
 
 .quantidade{
     grid-area: quantidade;
-}
+} */
