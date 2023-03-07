@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Main from "../template/Main";
 import './Cart.css'
 import Produto from "../items/Produto";
+import FinalizarPedido from "../items/FinalizarPedido"
 
 const headerProps = {
     icon: 'users',
@@ -39,12 +40,14 @@ export default class Cart extends Component {
                             tamanho='270G' preco='R$ 96.90' quantidade='1'/>
 
                         </div>
-                        {/* <div className="entrega">
-                            INFORMAÇÕES DE ENTREGA
-                        </div> */}
+                   
                         <div className="rightnav">
-                            FINALIZAR PEDIDO
+                            <div className="cep">
+                                <h1>ola</h1>
+                            </div>
                         </div>
+
+                        
                     </div>
                 )
         }
