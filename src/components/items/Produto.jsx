@@ -15,11 +15,6 @@ export default props =>
                         <br></br>Porte: <span id="destaque">{props.porte}</span> | Tamanho: <span id="destaque">{props.tamanho}</span>
                     </p>
                     <p className="preco">{props.preco}</p>
-                    {/* <p className="marca">{props.marca}</p>
-                    <p className="animal">{props.animal}</p>
-                    <p className="porte">{props.porte}</p>
-                    <p className="tamanho">{props.tamanho}</p>
-                    <p className="preco">{props.preco}</p> */}
                     {/* <p className="quantidade">{props.quantidade}</p>
                     <img className="excluir" src='https://icongr.am/clarity/trash.svg?size=128&color=currentColor'></img> */}
                 </div>

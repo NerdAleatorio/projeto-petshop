@@ -1,11 +1,8 @@
 header.header{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    'title icon'
-    ;
-
     padding: 0px 15px;
+
+    display: flex;
+    align-items: center;
 
     overflow: hidden;
     white-space: nowrap;
@@ -14,21 +11,8 @@ header.header{
 }
 
 .header h1{
-    color: white;
-    text-transform: uppercase;
-
     font-size: 2rem;
-    grid-area: title;
-}
-
-.page-icon{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-
-    grid-area: icon;
-}
-
-.page-icon img{
-    height: 50px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
 }

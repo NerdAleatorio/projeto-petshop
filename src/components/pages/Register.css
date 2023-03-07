@@ -1,0 +1,22 @@
+div.register-content{
+    margin: 0;
+    grid: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template: 
+    'register login'
+    ;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+div.user-register{
+    grid-area: register;
+}
+
+div.user-login{
+    grid-area: login;
+}

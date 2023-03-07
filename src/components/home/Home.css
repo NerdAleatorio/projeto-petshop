@@ -2,15 +2,21 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template: 
         'destaque destaque destaque destaque destaque'
+        'title title title title title'
         'marcas marcas marcas marcas marcas'
+
+        'titleP titleP titleP titleP titleP'
         'produtos produtos produtos produtos produtos'
+
+        'titleS titleS titleS titleS titleS'
         'servicos servicos servicos servicos servicos'
+        
+        'titleO titleO titleO titleO titleO'
         'outros outros outros outros outros'
     ;
-    height: 100vh;
+    height: 100%;
 }
 
 .cupom{
@@ -22,17 +28,27 @@
     grid-area: cupom;
 }
 
+.title{
+    grid-area: title;
+}
+
+.titleP{
+    grid-area: titleP;
+}
+
+.titleS{
+    grid-area: titleS;
+}
+
 .titulo-destaque{
     font-size: 1.5em;
     font-weight: 600;
     color: rgb(255, 0, 136);
 
-    margin-top: 0rem;
+    margin-top: 3rem;
     margin-left: 1rem;
     margin-bottom: 0rem;
-
-    width: 10.5em;
-
+    
     text-align: start;
 }
 
@@ -41,17 +57,29 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-area: destaque;
 
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .marcas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-area: marcas;
+
+    margin-top: 3.5rem;
 }
 
 .produtos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-area: produtos;
+
+    margin-top: 1rem;
 }
 
 .servicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-area: servicos;
+
+    margin-top: 1rem;
 }

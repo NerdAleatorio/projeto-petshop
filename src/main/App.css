@@ -8,8 +8,8 @@
     --footer-height:40px;
 
     --shadow:
-        0 2px 23px 0 rgba(45, 53, 54, 0.274),
-        0 2px 49px 0 rgba(160, 160, 160, 0.6);
+        0 2px 23px 0 rgba(93, 117, 121, 0.123),
+        0 2px 49px 0 rgba(211, 210, 210, 0.6);
 }
 
 *{
@@ -20,17 +20,17 @@
 .app{
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template: 
-        'logo header'
-        'sidenav content'
-        'sidenav footer'
+        'logo header abovenav'
+        'content content content'
+        'footer footer footer'
     ;
     height: 100vh;
 }
 
 .grid-template-rows-4{
-    grid-template-columns: 15% 1fr;
+    grid-template-columns: 15% 30% 1fr;
     grid-template-rows: 10% 1fr 6%;
 }
 
@@ -42,10 +42,8 @@ header.header{
     grid-area: header;
 }
 
-aside.sidenav{
-    grid-area: sidenav;
-    grid-row-start: 2;
-    grid-row-end: 4;
+aside.abovenav{
+    grid-area: abovenav;
 }
 
 main.content{

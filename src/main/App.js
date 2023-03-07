@@ -9,6 +9,7 @@ import Main from '../components/template/Main';
 import Logo from '../components/template/Logo';
 import Nav from '../components/template/Nav';
 import Footer from '../components/template/Footer';
+import personIcon from '../assets/imgs/person-circle.svg';
 
 export default props =>
   <BrowserRouter>
@@ -16,7 +17,7 @@ export default props =>
       <Logo />
       <Header />
       <Main />
-      <Nav />
+      <Nav icon={personIcon}/>
       <Routes />
       <Footer />
     </div>

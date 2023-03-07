@@ -1,0 +1,10 @@
+.marca-content{
+  margin-bottom: 3.5rem;
+  background: transparent;
+}
+
+.marca-img{
+  height: 200px;
+  border-radius: 50%;
+  border: 0.3em solid rgb(255, 0, 136);
+}
