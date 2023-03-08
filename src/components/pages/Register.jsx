@@ -8,6 +8,7 @@ export default props =>
         <div className="register-content">
             <div className="user-register">
                 <form className="register-box" action="/cadastrar" method="post">
+                <h1 className="titulo-cadastro">Crie uma conta</h1>
                     <input minlength="1" type="text" id="nome" name="nome" placeholder="Seu nome"/>
                     <input type="email" id="email" name="email" placeholder="Insira seu email"></input>
                     <input minlength='8' maxlength="20" type="password" id="password" name="password" placeholder="Insira sua senha"></input>
@@ -16,9 +17,10 @@ export default props =>
             </div>
             <div className="user-login">
                 <form className="login-box" action="/cadastrar" method="post">
+                <h1 className="titulo-login">Entre em sua conta</h1>
                     <input type="email" id="email" name="email" placeholder="Insira seu email"></input>
                     <input minlength='8' maxlength="20" type="password" id="password" name="password" placeholder="Insira sua senha"></input>
-                    <input type="submit" name="botao" value="Cadastrar"></input>
+                    <input type="submit" name="botao" value="Entrar"></input>
                 </form>
             </div>
         </div>

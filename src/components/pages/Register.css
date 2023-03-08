@@ -1,12 +1,13 @@
 div.register-content{
     margin: 0;
-    grid: grid;
+    display: grid;
+    
     text-align: center;
     align-items: center;
     justify-content: center;
 
     grid-template-columns: 1fr 1fr;
-    grid-template: 
+    grid-template-areas: 
     'register login'
     ;
     height: 100%;
@@ -19,4 +20,143 @@ div.user-register{
 
 div.user-login{
     grid-area: login;
+}
+
+.titulo-cadastro, .titulo-login{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.titulo-login{ color: #000000;}
+
+.register-box{
+    padding: 15em;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    border-radius: 4px;
+    background-color: rgb(255, 0, 136);
+    box-shadow: var(--shadow);
+}
+
+.register-box ::placeholder{
+    color: #fff;
+    font-weight: 100;
+    text-transform: none;
+}
+
+.register-box input[type = "text"], 
+.register-box input[type = "password"], 
+.register-box input[type = "email"]{
+  
+    display: block;
+    font-family: 'Kanit', sans-serif;
+    
+    width: 15em;
+    margin: 20px auto;
+    
+    
+    color: #ffffff;
+    font-weight: 500;
+
+    outline: none;
+    background: none;
+    text-align: center;
+    
+    border: 0;
+    border-radius: 5px;
+    border: 2px solid #fdfdfd;
+    transition: 0.25s;
+  }
+  
+  
+ 
+.register-box input[type = "email"]:focus,
+.register-box input[type = "text"]:focus,
+.register-box input[type = "password"]:focus{
+    width: 200px;
+    border-color: #000000;
+  }
+  
+.register-box input[type = "submit"]{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    text-align: center;
+  
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding: 14px 40px;
+    border-radius: 24px;
+    border: 2px solid #ffffff;
+    
+    transition: 0.25s;
+}
+
+.login-box{
+    padding: 16.5em;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    border-radius: 4px;
+    background: #ffffff;
+    box-shadow: var(--shadow);
+}
+
+.login-box input[type = "text"], 
+.login-box input[type = "password"], 
+.login-box input[type = "email"]{
+  
+    display: block;
+    font-family: 'Kanit', sans-serif;
+    
+    width: 15em;
+    margin: 20px auto;
+    
+    
+    color: #000000;
+    font-weight: 500;
+
+    outline: none;
+    background: none;
+    text-align: center;
+    
+    border: 0;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    transition: 0.25s;
+  }
+  
+  
+ 
+.login-box input[type = "email"]:focus,
+.login-box input[type = "text"]:focus,
+.login-box input[type = "password"]:focus{
+    width: 200px;
+    border-color: #ff00d4;
+  }
+  
+.login-box input[type = "submit"]{
+    cursor: pointer;
+    outline: none;
+    background: none;
+    text-align: center;
+  
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    padding: 14px 40px;
+    border-radius: 24px;
+    border: 2px solid #000000;
+    
+    transition: 0.25s;
 }

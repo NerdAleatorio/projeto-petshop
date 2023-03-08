@@ -1,0 +1,57 @@
+.animais-content{
+    margin: 0;
+    display: grid;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'cao gato ave tartaruga roedores'
+    ;
+    height: 100%;
+}
+
+div.caes-div{
+    grid-area: cao;
+}
+
+div.gatos-div{
+    grid-area: gato;
+}
+
+div.aves-div{
+    grid-area: ave;
+}
+
+div.tartaruga-div{
+    grid-area: tartaruga;
+}
+
+div.roedores-div{
+    grid-area: roedores;
+}
+
+.animais-content div{
+    width: 15em;
+    height: 13em;
+
+    margin-top: 15rem;
+    margin-left: 5rem;
+
+    border-radius: 5px;
+    border: 2px solid transparent;
+
+    box-shadow: var(--shadow);
+}
+
+.animais-content img{
+    width: 10em;
+    height: 10em;
+}
+
+.nome-animal{
+    font-size: 1.5em;
+    font-weight: 600;
+}
