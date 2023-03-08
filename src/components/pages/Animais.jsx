@@ -13,24 +13,24 @@ export default props =>
     <Main title='ANIMAIS'>
         <div className="animais-content">
             <div className="caes-div">
-                <img alt="imagem-animal" className="imagem-animal" src={cao}></img>
+                <a href="/caes"><img alt="imagem-animal" className="imagem-animal" src={cao}></img></a>
                 <p className="nome-animal">Cão</p>
             </div>
             <div className="gatos-div">
-                <img alt="imagem-animal" className="imagem-animal" src={gato}></img>
+                <a href="/gatos"><img alt="imagem-animal" className="imagem-animal" src={gato}></img></a>
                 <p className="nome-animal">Gato</p>
             </div>
             <div className="aves-div">
-                <img alt="imagem-animal" className="imagem-animal" src={ave}></img>
+                <a href="/aves"><img alt="imagem-animal" className="imagem-animal" src={ave}></img></a>
                 <p className="nome-animal">Ave</p>
             </div>
             <div className="tartaruga-div">
-                <img alt="imagem-animal" className="imagem-animal" src={tartaruga}></img>
-                <p className="nome-animal">Tartaruga</p>
+                <a href="/repteis"><img alt="imagem-animal" className="imagem-animal" src={tartaruga}></img></a>
+                <p className="nome-animal">Répteis</p>
             </div>
             <div className="roedores-div">
-                <img alt="imagem-animal" className="imagem-animal" src={hamster}></img>
-                <p className="nome-animal">Roedor</p>
+                <a href="/roedores"><img alt="imagem-animal" className="imagem-animal" src={hamster}></img></a>
+                <p className="nome-animal">Roedores</p>
             </div>
         </div>
     </Main>
