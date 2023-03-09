@@ -3,31 +3,17 @@ div.compra-div{
     text-align: center;
     align-items: center;
     justify-content: center;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    'div'
-    ;
-    height: 100%;
-
-    margin-top: 15rem;
-    background-color: transparent;
-}
-
-.div{
-    grid-area: div;
-}
-
-.compra-content{
-    display: grid;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     'produto opcoes'
     ;
     height: 100%;
+    margin-top: 12rem;
     background-color: transparent;
+}
+
+.div{
+    grid-area: div;
 }
 
 .produto-zone{
@@ -38,4 +24,52 @@ div.compra-div{
 
 .opcoes-zone{
     grid-area: opcoes;
+}
+
+.frete-text{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(255, 0, 136);
+    text-transform: uppercase;
+}
+
+#frete-area{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.title-resumo{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: start;
+    margin-left: 12rem;
+    color: rgb(255, 0, 136);
+    text-transform: uppercase;
+}
+
+.resumo-pedido{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'quantidade valor-produto'
+    'frete valor-frete'
+    'total valor-total'
+    ;
+    height: 100%;
+    background-color: transparent;
+}
+
+.frete-text{
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(255, 0, 136);
+    text-transform: uppercase;
+}
+
+#frete-area{
+    font-size: 1.2em;
+    text-align: center;
 }

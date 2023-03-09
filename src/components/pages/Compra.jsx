@@ -4,14 +4,9 @@ import './Compra.css'
 import Main from '../template/Main';
 import Produto from '../items/Produto';
 
-const headerProps = {
-    title: '5'
-}
-
 export default props =>
-    <Main {...headerProps}>
+    <Main title='Compra'>
         <div className='div compra-div'>
-            <div className='compra-content'>
                 <div className='produto-zone'>
                 <Produto
                     url='https://tanakao.com.br/media/catalog/product/cache/80cc0569059532456037fee68d18b70f/w/h/whiskas_sache_carne_ao_molho_1_.png'
@@ -20,11 +15,24 @@ export default props =>
                 </div>
                 
                 <div className='opcoes-zone'>
-                    <p className='produto-preco'>PREÇO</p>
-                    <label>Calcuar Frete</label>
-                    <input type={Number} placeholder='CEP'></input>
+
+                    <label for='frete-area' className='frete-text'>Calcular frete</label>
+                    <input id='frete-area' type={Number} placeholder='Digite seu CEP'></input>
+
+                    <h1 className='title-resumo'>Resumo do pedido</h1>
+                    <div className='resumo-pedido'>
+                        <p className='qnt-produto'>1 item</p>
+                        <p className='valor-produto'>R$15.99</p>
+
+                        <p className='frete-pedido'>Frete</p>
+                        <p className='valor-frete'>A calcular</p>
+
+                        <p className='total-pedido'>Total</p>
+                        <p className='valor-total'>R$15.99</p>
+                    </div>
+                    <input type={Number} placeholder='Cupom de desconto'></input>
+                    <button>APLICAR</button>
                     <button>COMPRAR</button>
                 </div>
-            </div>
         </div>
     </Main>
