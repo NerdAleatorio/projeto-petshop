@@ -1,37 +1,71 @@
 .animal-content{
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+    justify-content: center;
+    
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     'welcome welcome welcome welcome welcome'
+
     'header1 header1 header1 header1 header1'
-    'promocao promocao marcas promocao promocao'
+    'promocao promocao promocao promocao promocao'
 
     'header2 header2 header2 header2 header2'
     'produtos produtos produtos produtos produtos'
 
     'header3 header3 header3 header3 header3'
     'marcas marcas marcas marcas marcas'
-    
-    'titleO titleO titleO titleO titleO'
-    'outros outros outros outros outros'
     ;
+    height: 100%;
+}
+
+.header1{
+    grid-area: header1;
+}
+
+.header2{
+    grid-area: header2;
+}
+
+.header3{
+    grid-area: header3;
+}
+
+
+.div-welcome{
+    grid-area: welcome;
 }
 
 .imagem-welcome{
     width: 70vh;
     height: 30vh;
-    grid-area: div-welcome;
 }
 
-.produtos.promocao{
+.produtos-promocao{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: marcas;
+
+    margin-top: 3.5rem;
     grid-area: promocao;
 }
 
-.produtos.promocao{
+.produtos-animal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: marcas;
+
+    margin-top: 3.5rem;
     grid-area: produtos;
 }
 
-.produtos.promocao{
-    grid-area: outros;
+.marcas-animal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-area: marcas;
+
+    margin-top: 3.5rem;
+    grid-area: marcas;
 }
